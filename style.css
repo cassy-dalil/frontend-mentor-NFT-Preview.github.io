@@ -1,0 +1,176 @@
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+/* STYLE GUIDE */
+
+/* # Front-end Style Guide
+
+## Layout
+The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600 */
+
+body {
+    font-size: 18px;
+    background-color: var(--very-dark-blue-mainbg);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    /* text-align: center; */
+}
+
+/* COLORS */
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+    --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* main content */
+
+.card {
+    background-color: var(--very-dark-blue-cardbg);
+    height: 450px;
+    width: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin: 25px auto;
+    box-shadow: 10px 10px 15px hsl(215, 55%, 9%);
+}
+
+@media (min-width: 1440px) {
+    .card {
+        margin: 150px auto;
+        box-shadow: 20px 20px 30px hsl(215, 55%, 9%);
+    }
+
+    .image {
+        width: 350px;
+        height: 400px;
+    }
+
+    h3 {
+        padding: 0px;
+    }
+}
+
+.image {
+    background-image: url('./images/image-equilibrium.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 260px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 5px;
+}
+
+.card-p {
+    font-size: 14px;
+    color: var(--very-dark-blue-line);
+    padding: 0px 5px;
+}
+
+.bottom-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    border-bottom: .5px solid var(--very-dark-blue-line);
+    padding-bottom: 10px;
+}
+
+
+.eth-div {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 25px;
+    width: 100px;
+    color: var(--cyan);
+}
+
+
+.eth-div p, .time-div p {
+    font-size: 14px;
+    padding: 0px 3px;
+    margin-bottom: 2px;
+    margin: 2.5px;
+}
+
+.time-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 100px;
+    color: var(--very-dark-blue-line);
+}
+
+
+
+/* creation */
+
+.creation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    color: var(--very-dark-blue-line);
+    height: 25px;
+    margin-top: 10px;
+}
+
+.creation img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+span {
+    color: var(--white);
+}
+
+/* attribution */
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
